@@ -67,7 +67,7 @@ function histograma2(data){
   const width = 600 - margin.left - margin.right;
   const height = 400 - margin.top - margin.bottom;
   
-  const svg = d3.selectAll("svg")
+  const svg = d3.select("#misvg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
