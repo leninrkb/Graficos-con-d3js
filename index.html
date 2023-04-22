@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="bg-gradient-to-br from-slate-800 to-teal-800">
     <nav class="z-50 fixed backdrop-blur-lg  rounded-lg w-1/2 p-6 m-3 backdrop-brightness-50">
         <h1 class="text-2xl text-gray-300 font-semibold">Graficos con D3js</h1>
     </nav>
@@ -34,21 +34,24 @@
                     <svg id="svg-barras"></svg>
                 </div>
             </div>
+            <div class="col">
+                <div
+                    class="m-3 p-3 w-fit rounded-lg transition ease-in-out duration-500 hover:text-gray-300 hover:scale-105 hover:bg-slate-700 bg-slate-500">
+                    <label class="text-lg border-b-4 border-slate-500">
+                        Grafico parametro vs denuncia
+                    </label>
+                    <div id="densidad"></div>
+                </div>
+            </div>
         </div>
     </div>
 
 </body>
-<script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="./logica.js"></script>
+<!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+<script src="https://d3js.org/d3.v6.js"></script>
+<!-- <script src="https://d3js.org/d3.v4.js"></script> -->
 <script src="./barras.js"></script>
-<style>
-    html {
-        background-color: #44444a;
-        opacity: 0.8;
-        background-image: linear-gradient(#0d0f31 1px, transparent 1px),
-            linear-gradient(to right, #0d0f31 1px, #44444a 1px);
-        background-size: 20px 20px;
-    }
-</style>
+<script src="./puntos.js"></script>
+<script src="./densidad.js"></script>
 
 </html>
